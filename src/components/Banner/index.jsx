@@ -1,12 +1,11 @@
-import banner from '../../assets/HOME_PAGE.png';
-
-const Banner = () => {
+const Banner = ({image, text, alt}) => {
     return (
-    <div>
-        <img src={banner} alt="Photo d'une côte sauvage avec l'océan." />
-        <h1>Chez vous, partout et ailleurs</h1>
-    </div>
-    )
+        <div className="container" id="image-container">
+            <img src={image} className="banner" id="banner" alt={alt}/>
+            <div className="overlay" id="overlay"></div>
+            {text && <h1 className="text" id="image-text">{text}</h1>}
+        </div>
+    );
 };
 
 export default Banner;
