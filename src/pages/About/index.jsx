@@ -6,6 +6,7 @@ const About = () => {
     useEffect(() => {
       document.title = "À propos | Kasa";
     }, []);
+
     return (
       <>
           <Header />
