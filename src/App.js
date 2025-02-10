@@ -3,6 +3,7 @@ import Home from "./pages/Home/index.jsx";
 import About from "./pages/About/index.jsx";
 import Error from "./pages/Error/index.jsx";
 import Property from "./pages/Property/index.jsx";
+import "./styles/main.scss";
 
 const App = () => {
   return (

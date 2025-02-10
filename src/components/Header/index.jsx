@@ -1,17 +1,28 @@
 import logo from '../../assets/LOGO_KASA.svg';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-    return (
-      <header>
-        <nav>
-          <img src={logo} alt="Logo de l'entreprise Kasa de couleur rouge." />
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
-      </header>
-    );
-  };
+  return (
+    <header className="header" id="header">
+      <nav className="navbar" id="navbar">
+        <NavLink to="/">
+          <img src={logo} alt="Logo" className="logo" id="logo" />
+        </NavLink>
+        <ul className="navLinks">
+          <li>
+            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+              Accueil
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
+              À propos
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
-  export default Header;
+export default Header;
