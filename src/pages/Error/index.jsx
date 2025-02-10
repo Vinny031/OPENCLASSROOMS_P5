@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const Error = () => {
     useEffect(() => {
     document.title = "Erreur | Kasa";
-    }, []);
+  }, []);
 
     return (
         <>
