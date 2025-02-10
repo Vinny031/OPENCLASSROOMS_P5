@@ -1,5 +1,26 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     border: 1px solid rgba(0, 0, 0, 0.2);
+//     background-color: rgba(255, 0, 0, 0.1);
+// }
+
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+body, html {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 @import './layout/_header.scss';
 @import './components/banner.scss';
+@import './components/card.scss';
 @import './layout/footer.scss';

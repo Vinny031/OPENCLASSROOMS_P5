@@ -1,26 +1,26 @@
 .footer {
     background-color: #000;
     color: #fff;
-    padding: 20px;
     text-align: center;
-    height: 100%;
-    margin-top: 50px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 .footer-logo {
     width: 122px;
     height: 40px;
     filter: brightness(0) invert(1);
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 66px;
 }
 
 .footer p {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1.5;
     font-family: Montserrat;
-    margin: 0;
+    margin: 28px 0;
 }

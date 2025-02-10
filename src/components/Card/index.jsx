@@ -10,16 +10,16 @@ const Card = () => {
       .catch((error) => console.error("Erreur de chargement des logements", error));
   }, []);
 
-    return (
-    <div>
+  return (
+    <div className="cards-container">
       {logements.map((logement) => (
-        <div key={logement.id} className="bg-white rounded-2xl shadow-lg p-4 max-w-xs">
-          <img src={logement.cover} alt="Aperçu de la location." className="w-full h-40 object-cover rounded-lg" />
-          <h2 className="text-xl font-bold mt-2">{logement.title}</h2>
+        <div key={logement.id} className="card">
+          <img src={logement.cover} alt="Aperçu de la location." className="card-image" />
+          <h2 className="card-title">{logement.title}</h2>
         </div>
       ))}
     </div>
-    );
-  };
+  );
+};
 
 export default Card;
