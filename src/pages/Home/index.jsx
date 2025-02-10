@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
+import Footer from "../../components/Footer";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Header />
       <Banner />
       <Card />
+      <Footer />
     </>
   )
 };
