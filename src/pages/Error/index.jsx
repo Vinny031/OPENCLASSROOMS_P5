@@ -11,15 +11,15 @@ const Error = () => {
   }, []);
 
     return (
-        <>
+        <div className="error_body">
             <Header />
-            <div className="error-page">
+            <div className="error_container">
                 <img src={ERROR} alt="Erreur 404, page non trouvée de couleur rouge." className="error_logo" id="error_logo"/>
                 <p>Oups! La page que vous demandez n'existe pas.</p>
-                <Link to="/">Retourner sur la page d'accueil</Link>
+                <Link to="/" className="error_link">Retourner sur la page d'accueil</Link>
             </div>
             <Footer />
-        </>
+        </div>
     )
 };
 
