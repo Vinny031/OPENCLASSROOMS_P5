@@ -11,12 +11,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="homepage_container">
+    <>
       <Header />
       <Banner image={HOME_PAGE} text="Chez vous, partout et ailleurs" alt="Paysage côtier avec des rochers, des arbres et l'océan." />
       <Card />
       <Footer />
-    </div>
+    </>
   )
 };
 
