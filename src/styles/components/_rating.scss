@@ -1,0 +1,17 @@
+.logement-rating {
+    display: flex;
+    align-items: center;
+}
+
+.logement-rating .star {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .logement-rating .filled {
+    color: #FF6060; 
+  }
+  
+  .logement-rating .empty {
+    color: #e3e3e3; 
+  }
