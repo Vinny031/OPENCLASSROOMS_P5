@@ -1,4 +1,4 @@
-.description-equipments {
+.description-equipments{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -7,7 +7,10 @@
 
 .property-description, 
 .property-equipments {
-    width: calc(50% - 50px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: calc(50% - 75px);
 }
 
 .property-equipments ul, 

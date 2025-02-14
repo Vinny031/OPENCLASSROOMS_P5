@@ -16,9 +16,9 @@ const About = () => {
     <Header />
     <div className="about">
       <Banner image={ABOUT_PAGE} alt="Un paysage de montagnes avec une rivière serpentant à travers, bordée d'arbres verdoyants et de cimes enneigées en arrière-plan."/>
-      <div>
+      <div className="about-collapse-container">
         {About_Data.sections.map((item) => (
-            <Collapse key={item.index} title={item.title}>
+            <Collapse key={item.index} title={item.title} className="about-collapse">
               <p>{item.content}</p>
             </Collapse>
         ))}
