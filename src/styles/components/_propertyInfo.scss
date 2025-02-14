@@ -1,0 +1,21 @@
+.description-equipments {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.property-description, 
+.property-equipments {
+    width: calc(50% - 50px);
+}
+
+.property-equipments ul, 
+.property-description p {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.property-equipments li {
+    list-style-type: none;
+}
