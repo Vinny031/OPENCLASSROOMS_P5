@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Slideshow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,8 +30,7 @@ function Slideshow({ images }) {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  // --- Ajout dépendance sur currentIndex pour garder le state à jour ---
-  }, [currentIndex]);
+  });
 
   return (
     <div className="slider">
