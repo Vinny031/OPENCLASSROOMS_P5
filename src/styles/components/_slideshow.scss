@@ -54,3 +54,24 @@
   font-size: 18px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+@media (min-width: 320px) and (max-width: 815px) {
+  .slider {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 0 0 0;
+  }
+
+  .slider-image {
+    height: 400px;
+  }
+
+  .prev-button,
+  .next-button {
+    font-size: 24px;
+}
+
+.slider-number {
+  font-size: 14px;
+}
+}
