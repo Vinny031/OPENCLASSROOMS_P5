@@ -2,15 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 100%;
+    gap: 2vw;
 }
 
 .property-description, 
 .property-equipments {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: calc(50% - 75px);
+    width: calc(100% - 200px);
 }
 
 .property-equipments ul, 
@@ -21,4 +22,16 @@
 
 .property-equipments li {
     list-style-type: none;
+}
+
+@media (min-width: 320px) and (max-width: 815px) {
+    .description-equipments {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .property-description, .property-equipments {
+        width: 100%;
+    }
 }

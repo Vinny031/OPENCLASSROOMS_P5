@@ -28,7 +28,8 @@
 
 .navLinks a {
     text-decoration: none;
-    color: #333;
+    font-family: Montserrat;
+    color: black;
     font-size: 18px;
 }
 
@@ -43,4 +44,26 @@
 .logo {
     width: 150px;
     height: auto;
+}
+
+@media (min-width: 320px) and (max-width: 815px) {
+    .header {
+        width: 100%;
+        max-width: calc(100% - 40px);
+        padding: 20px 20px 0;
+    }
+
+    .logo {
+      width: 145px;
+    }
+
+    .navLinks li {
+        margin: 0 0 0 20px;
+    }
+
+    .navLinks a {
+        width: 100%;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }

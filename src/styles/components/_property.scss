@@ -32,6 +32,11 @@
     margin-bottom: 20px;
   }
 
+  .property-tags {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .tag {
     display: inline-block;
     background-color: #FF6060; 
@@ -40,7 +45,7 @@
     margin-right: 10px;
     border-radius: 12px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     border: 1px solid #FF6060; 
   }
 
@@ -48,6 +53,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px; 
     margin-top: 20px;
+  }
+
+  @media (min-width: 320px) and (max-width: 815px) {
+    .property-main-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logement-info {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .property-tags {
+      gap: 10px;
+    }
+  
+    .tag {
+      font-size: 10px;
+      white-space: nowrap;
+      padding: 5px 10px;
+      flex-grow: 1;
+      text-align: center; 
+      margin: 0;
+    }
+
+    .logement-host {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin : 15px 0 15px 0; 
+      width: 100%;
+      }
+
+      .property-detail {
+        width: 100%;
+        max-width: calc(100% - 40px);
+        padding: 0 20px;
+      }
+
+      .property-title {
+        font-size: 18px;
+      }
+
+      .location {
+        font-size: 14px;
+      }
   }

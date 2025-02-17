@@ -1,5 +1,5 @@
 .collapse-container {
-    margin: 27px;
+    margin-top: 27px;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 200px);
+    width: calc(100% - 400px);
   }
 
   .about-collapse {
@@ -91,5 +91,20 @@
     100% {
       opacity: 0;
       transform: translateY(-20px);
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 815px) {
+    .collapse-container {
+      margin: 0 0 20px 0;
+    }
+
+    .collapse-title h2 {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .about-collapse-container {
+      width: calc(100% - 40px);
     }
   }

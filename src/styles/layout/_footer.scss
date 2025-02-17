@@ -24,3 +24,13 @@
     font-family: Montserrat;
     margin: 28px 0;
 }
+
+@media (min-width: 320px) and (max-width: 815px) {
+    .footer {
+        margin: 0;
+    }
+    
+    .footer p {
+    white-space: pre-line;
+    }
+}

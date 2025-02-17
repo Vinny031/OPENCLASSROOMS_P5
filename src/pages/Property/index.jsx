@@ -18,10 +18,9 @@ function PropertyDetails() {
   const logement = logements.find(logement => logement.id === id);
 
   if (!logement) {
-    return <Navigate to="/error" />; 
+    return <Navigate to="/error" />;
   }
 
-   
   return (
     <>
       <Header />
