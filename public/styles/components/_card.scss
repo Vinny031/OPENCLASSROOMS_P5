@@ -1,0 +1,70 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: clamp(20px, 5vw, 50px);
+    margin: 50px auto;
+    padding: 50px;
+    width: 100%;
+    max-width: calc(100% - 200px);
+    box-sizing: border-box;
+    border-radius: 25px;
+    background: #f6f6f6;
+  }
+  
+  .card {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover{
+    transform: scale(1.03);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-family: montserrat;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 0 0 1vw 1vw;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+  
+@media (min-width: 320px) and (max-width: 815px) {
+  .cards-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%;
+      padding: 20px;
+      margin: 0;
+      gap: 20px;
+      box-sizing: border-box;
+      background: white;
+    }
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 18px;
+    }
+
+}

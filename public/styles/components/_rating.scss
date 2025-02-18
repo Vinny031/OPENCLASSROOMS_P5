@@ -1,0 +1,28 @@
+.logement-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logement-rating .star {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .logement-rating .star:first-of-type {
+    margin-left: 0;
+  }
+  
+  .logement-rating .filled {
+    color: #FF6060; 
+  }
+  
+  .logement-rating .empty {
+    color: #e3e3e3; 
+  }
+
+  @media (min-width: 320px) and (max-width: 815px) {
+    .logement-rating .star {
+    font-size: 16px;
+  }
+}

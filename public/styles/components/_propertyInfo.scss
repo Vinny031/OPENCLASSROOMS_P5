@@ -1,0 +1,37 @@
+.description-equipments{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2vw;
+}
+
+.property-description, 
+.property-equipments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: calc(100% - 200px);
+}
+
+.property-equipments ul, 
+.property-description p {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.property-equipments li {
+    list-style-type: none;
+}
+
+@media (min-width: 320px) and (max-width: 815px) {
+    .description-equipments {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .property-description, .property-equipments {
+        width: 100%;
+    }
+}

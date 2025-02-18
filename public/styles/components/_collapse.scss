@@ -1,0 +1,110 @@
+.collapse-container {
+    margin-top: 27px;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .collapse-title {
+    font-family: Montserrat;
+    font-size: 1.5vh;
+    font-style: normal;
+    background-color: #FF6060;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    border-radius: 10px;
+  }
+
+  .about-collapse-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 400px);
+  }
+
+  .about-collapse {
+    gap: 30px;
+  }
+
+  .arrow {
+    transition: transform 0.6s ease-in-out;
+    color: white;
+    font-size: 25px;
+    transform: rotate(0deg); 
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  
+  .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease, opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    transform: translateY(-20px);
+    z-index: 1;
+    position: relative;
+    background-color: #f6f6f6;
+  }
+  
+  .collapse-content.open {
+    max-height: 100%;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  .collapse-content p {
+    padding: 0 12px;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left; 
+  
+  }
+  
+  @keyframes slideFade {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideFadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 815px) {
+    .collapse-container {
+      margin: 0 0 20px 0;
+    }
+
+    .collapse-title h2 {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    .about-collapse-container {
+      width: calc(100% - 40px);
+    }
+  }
