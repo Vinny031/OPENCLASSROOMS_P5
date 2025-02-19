@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Vinny031.github.io/OPENCLASSROOMS_P5/acceuil",
+  "homepage": "https://Vinny031.github.io/OPENCLASSROOMS_P5/",
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "start": "vite",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
