@@ -1,0 +1,12 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+  }
+
+  @media (min-width: 320px) and (max-width: 815px) {
+    .about {
+      min-height: 80vh;
+    }
+  }
