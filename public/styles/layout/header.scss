@@ -33,7 +33,8 @@
     font-size: 18px;
 }
 
-.navLinks a:hover {
+.navLinks a:hover,
+.navLinks a.active {
     text-decoration: underline;
 }
 
